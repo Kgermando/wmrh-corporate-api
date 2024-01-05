@@ -18,7 +18,7 @@ async function bootstrap() {
   const HOST = process.env.HOST || 3001;
   const PORT = process.env.PORT || 3001;
   app.listen(PORT, () => {
-    console.log(`App listening on url ${PORT} ${PORT}`);
+    console.log(`App listening on url ${HOST}/${PORT}`);
     console.log('Press Ctrl+C to quit.');
   });
 }
