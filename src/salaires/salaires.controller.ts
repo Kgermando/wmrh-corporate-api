@@ -32,48 +32,56 @@ export class SalairesController {
       return this.salaireService.getJrCongePayE(code_entreprise, matricule, date_paie);
     }
 
-    @Get('get-nbr-heures-supp/:code_entreprise/:id/:date_paie')
+
+  
+    @Get('get-nbr-heures-supp/:code_entreprise/:id/:date_paie/:pris_en_compte_mois_plus_1')
     async nbrHeureSupp(
       @Param('code_entreprise') code_entreprise: string,
       @Param('id') id: number,
-      @Param('date_paie') date_paie: string
+      @Param('date_paie') date_paie: string,
+      @Param('pris_en_compte_mois_plus_1') pris_en_compte_mois_plus_1: string
     ) {
-      return this.salaireService.nbrHeureSupp(code_entreprise, id, date_paie);
+      return this.salaireService.nbrHeureSupp(code_entreprise, id, date_paie, pris_en_compte_mois_plus_1);
     }
 
-    @Get('get-prime-total-cdf/:code_entreprise/:id/:date_paie')
+    @Get('get-prime-total-cdf/:code_entreprise/:id/:date_paie/:pris_en_compte_mois_plus_1')
     async primeTotalCDF(
       @Param('code_entreprise') code_entreprise: string,
       @Param('id') id: number,
-      @Param('date_paie') date_paie: string
+      @Param('date_paie') date_paie: string,
+      @Param('pris_en_compte_mois_plus_1') pris_en_compte_mois_plus_1: string
     ) {
-      return this.salaireService.primeTotalCDF(code_entreprise, id, date_paie);
+      return this.salaireService.primeTotalCDF(code_entreprise, id, date_paie, pris_en_compte_mois_plus_1);
     }
-    @Get('get-prime-total-usd/:code_entreprise/:id/:date_paie')
+    @Get('get-prime-total-usd/:code_entreprise/:id/:date_paie/:pris_en_compte_mois_plus_1')
     async primeTotalUSD(
       @Param('code_entreprise') code_entreprise: string,
       @Param('id') id: number,
-      @Param('date_paie') date_paie: string
+      @Param('date_paie') date_paie: string,
+      @Param('pris_en_compte_mois_plus_1') pris_en_compte_mois_plus_1: string
     ) {
-      return this.salaireService.primeTotalUSD(code_entreprise, id, date_paie);
+      return this.salaireService.primeTotalUSD(code_entreprise, id, date_paie, pris_en_compte_mois_plus_1);
     }
 
-    @Get('get-penalite-total-cdf/:code_entreprise/:id/:date_paie')
+    @Get('get-penalite-total-cdf/:code_entreprise/:id/:date_paie/:pris_en_compte_mois_plus_1')
     async penaliteTotalCDF(
       @Param('code_entreprise') code_entreprise: string,
       @Param('id') id: number,
-      @Param('date_paie') date_paie: string
+      @Param('date_paie') date_paie: string,
+      @Param('pris_en_compte_mois_plus_1') pris_en_compte_mois_plus_1: string
     ) {
-      return this.salaireService.penaliteTotalCDF(code_entreprise, id, date_paie);
+      return this.salaireService.penaliteTotalCDF(code_entreprise, id, date_paie, pris_en_compte_mois_plus_1);
     }
-    @Get('get-penalite-total-usd/:code_entreprise/:id/:date_paie')
+    @Get('get-penalite-total-usd/:code_entreprise/:id/:date_paie/:pris_en_compte_mois_plus_1')
     async penaliteTotalUSD(
       @Param('code_entreprise') code_entreprise: string,
       @Param('id') id: number,
-      @Param('date_paie') date_paie: string
+      @Param('date_paie') date_paie: string,
+      @Param('pris_en_compte_mois_plus_1') pris_en_compte_mois_plus_1: string
     ) {
-      return this.salaireService.penaliteTotalUSD(code_entreprise, id, date_paie);
+      return this.salaireService.penaliteTotalUSD(code_entreprise, id, date_paie, pris_en_compte_mois_plus_1);
     }
+
 
     @Get('get-avance-salaire-total-cdf/:code_entreprise/:id/:date_paie')
     async avanceSalaireTotalCDF(
