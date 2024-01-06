@@ -12,7 +12,9 @@ export class PreferenceController {
     ) {}
 
     @Get('preference/:code_entreprise')
-    async preference(@Param('code_entreprise') code_entreprise: string) { 
+    async preference(
+        @Param('code_entreprise') code_entreprise: string
+        ) {
         return this.preferenceService.preference({code_entreprise});
     }
 
