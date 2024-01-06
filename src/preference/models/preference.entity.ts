@@ -1,4 +1,4 @@
-import { Entreprise } from "src/admin/entreprise/models/entreprise.entity"; 
+import { Corporate } from "src/corporate/models/corporate.entity";
 import { Column, Entity, JoinColumn, OneToOne, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity('preferences')
@@ -8,9 +8,9 @@ export class Preference {
     id: number;  
     
     // Infos entreprise 
-    @OneToOne(() => Entreprise)
+    @OneToOne(() => Corporate)
     @JoinColumn()
-    company: Entreprise;
+    company: Corporate;
 
     // Date de paie
     @Column()

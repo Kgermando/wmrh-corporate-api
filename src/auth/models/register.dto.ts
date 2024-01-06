@@ -1,4 +1,5 @@
 import { IsNotEmpty } from "class-validator";
+import { Corporate } from "src/corporate/models/corporate.entity";
 
 export class RegisterDto {
    
@@ -57,4 +58,6 @@ export class RegisterDto {
     
     @IsNotEmpty()
     code_entreprise: string;
+
+    corporates: Corporate;
 }

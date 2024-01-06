@@ -1,8 +1,8 @@
-import { Entreprise } from "src/admin/entreprise/models/entreprise.entity";
+import { Corporate } from "src/corporate/models/corporate.entity";
 
 export class PreferenceUpdateDto {
     
-    company?: Entreprise;
+    company?: Corporate;
 
     // Date de paie
     date_paie ?: Date;

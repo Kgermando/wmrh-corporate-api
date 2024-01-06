@@ -32,8 +32,7 @@ import { EntrepriseModule } from './admin/entreprise/entreprise.module';
 import { AbonnementClientModule } from './admin/abonnement_client/abonnement_client.module';
 import { HoraireModule } from './horaire/horaire.module';
 import { APP_INTERCEPTOR } from '@nestjs/core'; 
-import { CorporateModule } from './corporate/corporate.module'; 
-import { CorporateReglageModule } from './corporate-reglage/corporate-reglage.module';
+import { CorporateModule } from './corporate/corporate.module';
 import { IndemniteModule } from './indemnite/indemnite.module';
 import { IndemniteContentModule } from './indemnite-content/indemnite-content.module';
 
@@ -90,7 +89,6 @@ import { IndemniteContentModule } from './indemnite-content/indemnite-content.mo
     AbonnementClientModule,
     HoraireModule,
     CorporateModule,
-    CorporateReglageModule,
     IndemniteModule,
     IndemniteContentModule, 
   ],

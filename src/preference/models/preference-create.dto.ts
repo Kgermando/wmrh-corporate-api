@@ -1,9 +1,9 @@
 import { IsNotEmpty } from "class-validator";
-import { Entreprise } from "src/admin/entreprise/models/entreprise.entity";
-
+import { Corporate } from "src/corporate/models/corporate.entity";
+ 
 export class PreferenceCreateDto {
    
-    company: Entreprise; 
+    company: Corporate; 
 
     
     // Date de paie
